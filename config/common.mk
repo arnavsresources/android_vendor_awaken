@@ -192,3 +192,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/awaken/overlay/common
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/awaken/config/partner_gms.mk
+
+# UDFPS Animations
+ifeq ($(INCLUDE_UDFPS_ANIMATIONS),true)
+PRODUCT_PACKAGES += \
+    UdfpsResources
+endif
